@@ -191,6 +191,46 @@ body {
     background-color: #e67e22;
 }
 
+/* Estilo da Seção História da Banda */
+.historia {
+    padding: 50px 10px; /* Espaçamento ao redor da seção */
+    background-color: #f4f4f4; /* Cor de fundo clara para a seção */
+}
+
+.historia-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza a seção */
+    flex-direction: row-reverse; /* Faz com que a foto fique do lado direito e o texto do lado esquerdo */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.historia-foto {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.historia-foto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.historia-texto {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.historia-texto h2 {
+    margin-top: 0; /* Remove a margem superior */
+    font-size: 2rem; /* Tamanho da fonte do título */
+}
+
+.historia-texto p {
+    font-size: 1rem; /* Tamanho da fonte do texto */
+    line-height: 1.6; /* Espaço entre linhas do texto */
+    color: #333; /* Cor do texto */
+}
+
 .btn-detalhes {
     display: inline-block;
     margin-top: 20px; /* Espaço acima do botão */
@@ -207,7 +247,84 @@ body {
     background-color: #e67e22; /* Cor do botão ao passar o mouse */
 }
 
+.btn-detalhes {
+    display: inline-block;
+    margin-top: 20px; /* Espaço acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #f39c12; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+}
 
+.btn-detalhes:hover {
+    background-color: #e67e22; /* Cor do botão ao passar o mouse */
+}
+
+.carousel-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.carousel-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+    
 /* Estilo da Seção de Agenda */
 .agenda-section {
     padding: 60px 20px;

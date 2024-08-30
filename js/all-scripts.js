@@ -72,3 +72,4 @@ document.querySelectorAll('.footer-section a').forEach(link => {
         }, 500); // Tempo da transição em milissegundos
     });
 });
+
