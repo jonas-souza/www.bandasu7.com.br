@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Banda - Site Oficial</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#home">Banda SU7</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="navbar-social">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Principal (Home) -->
+    <section id="home" class="home-section">
+        <div class="banner">
+            <h1>Bem-vindo ao Site Oficial da Banda SU7</h1>
+            <button onclick="scrollToSection('contato')">Ouça nossas músicas</button>
+        </div>
+    </section>
+
+    <!-- Seção História -->
+    <section id="historia" class="historia-section">
+        <h2>História da Banda</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error expedita sapiente temporibus corrupti nesciunt ducimus inventore, neque natus vitae quasi, cumque eaque laudantium officiis officia aspernatur eum distinctio? Error quas nemo temporibus soluta consectetur. Mollitia rerum hic veniam aperiam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex quis asperiores obcaecati omnis, nemo minima distinctio itaque? Eligendi totam quaerat maiores deleniti eius ex illum obcaecati atque laboriosam. Ducimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex quis asperiores obcaecati omnis, nemo minima distinctio itaque? Eligendi totam quaerat maiores deleniti eius ex illum obcaecati atque laboriosam. Ducimus.</p>
+        <a href="/pages/index.html" class="btn-all-events">Voltar ao início</a>
+    </section>
+
+    <!-- Seção Agenda -->
+<section id="agenda" class="agenda-section">
+    <h2>AGENDA</h2>
+    <div class="event-list">
+        <div class="event-item">
+            <div class="event-date">
+                <span class="event-day">15</span>
+                <span class="event-month">Out</span>
+            </div>
+            <div class="event-details">
+                <h3>IGREJA BATISTA Lorem ipsum dolor sit amet.</h3>
+                <p>Local: Espaço das Américas, Cuiabá/MT</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-date">
+                <span class="event-day">15</span>
+                <span class="event-month">Out</span>
+            </div>
+            <div class="event-details">
+                <h3>IGREJA BATISTA Lorem ipsum dolor sit amet.</h3>
+                <p>Local: Espaço das Américas, Cuiabá/MT</p>
+            </div>
+        </div>
+        <!-- Adicione mais eventos conforme necessário -->
+    </div>
+    <a href="/pages/agenda.html" class="btn-all-events">Ver Agenda Completa</a>
+</section>
+
+    <!-- Galeria de Fotos -->
+    <section id="fotos" class="fotos-section">
+        <h2>Galeria de Fotos</h2>
+        <div class="photo-gallery">
+            <!-- Imagens da galeria -->
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato-section">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Banda SU7. Todos os direitos reservados.</p>
+        <div class="social-media-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/all-scripts.js"></script>
+</body>
+</html>
